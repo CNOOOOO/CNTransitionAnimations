@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NewViewController.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(self.view.bounds.size.width / 2 - 40, self.view.bounds.size.height / 2 - 15, 80, 30);
+    button.backgroundColor = [UIColor redColor];
+    [button setTitle:@"present" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(presentNewController) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
+- (void)presentNewController {
+    NewViewController * newVC = [[NewViewController alloc] init];
+    [self presentViewController:newVC animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

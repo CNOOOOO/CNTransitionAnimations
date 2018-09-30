@@ -15,6 +15,8 @@
 		0A2E3D102160C646001AD5B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E3D0F2160C646001AD5B4 /* main.m */; };
 		0A2E3D1A2160C646001AD5B4 /* CNTransitionAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E3D192160C646001AD5B4 /* CNTransitionAnimationsTests.m */; };
 		0A2E3D252160C646001AD5B4 /* CNTransitionAnimationsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E3D242160C646001AD5B4 /* CNTransitionAnimationsUITests.m */; };
+		0A2E3D342160C682001AD5B4 /* CNTransitionAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E3D322160C682001AD5B4 /* CNTransitionAnimations.m */; };
+		0A2E3D372160C8BB001AD5B4 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E3D362160C8BB001AD5B4 /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0A2E3D202160C646001AD5B4 /* CNTransitionAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNTransitionAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2E3D242160C646001AD5B4 /* CNTransitionAnimationsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNTransitionAnimationsUITests.m; sourceTree = "<group>"; };
 		0A2E3D262160C646001AD5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2E3D322160C682001AD5B4 /* CNTransitionAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTransitionAnimations.m; sourceTree = "<group>"; };
+		0A2E3D332160C682001AD5B4 /* CNTransitionAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTransitionAnimations.h; sourceTree = "<group>"; };
+		0A2E3D352160C8BB001AD5B4 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		0A2E3D362160C8BB001AD5B4 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		0A2E3CFF2160C645001AD5B4 /* CNTransitionAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				0A2E3D332160C682001AD5B4 /* CNTransitionAnimations.h */,
+				0A2E3D322160C682001AD5B4 /* CNTransitionAnimations.m */,
 				0A2E3D002160C645001AD5B4 /* AppDelegate.h */,
 				0A2E3D012160C645001AD5B4 /* AppDelegate.m */,
 				0A2E3D032160C645001AD5B4 /* ViewController.h */,
 				0A2E3D042160C645001AD5B4 /* ViewController.m */,
+				0A2E3D352160C8BB001AD5B4 /* NewViewController.h */,
+				0A2E3D362160C8BB001AD5B4 /* NewViewController.m */,
 				0A2E3D062160C645001AD5B4 /* Main.storyboard */,
 				0A2E3D092160C646001AD5B4 /* Assets.xcassets */,
 				0A2E3D0B2160C646001AD5B4 /* LaunchScreen.storyboard */,
@@ -264,6 +274,8 @@
 			files = (
 				0A2E3D052160C645001AD5B4 /* ViewController.m in Sources */,
 				0A2E3D102160C646001AD5B4 /* main.m in Sources */,
+				0A2E3D372160C8BB001AD5B4 /* NewViewController.m in Sources */,
+				0A2E3D342160C682001AD5B4 /* CNTransitionAnimations.m in Sources */,
 				0A2E3D022160C645001AD5B4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +446,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T5M6ML8L2;
 				INFOPLIST_FILE = CNTransitionAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +464,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T5M6ML8L2;
 				INFOPLIST_FILE = CNTransitionAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
